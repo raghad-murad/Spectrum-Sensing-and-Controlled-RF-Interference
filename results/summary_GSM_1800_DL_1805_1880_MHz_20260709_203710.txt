@@ -1,0 +1,25 @@
+ENCS5323 Component 1 - Spectrum Sensing Summary
+===============================================
+
+Capture time: 2026-07-09 20:37:10.554452
+Band: GSM 1800 DL (1805-1880 MHz)
+Frequency range: 1805.000 - 1880.000 MHz
+Pluto URI: usb:2.1.5
+
+Receiver settings:
+Sample rate: 20.00 MSPS
+RF bandwidth: 10.00 MHz
+RX gain: 40.0 dB
+FFT size: 1024
+Averages per step: 10
+
+Results:
+Peak frequency: 1842.246094 MHz
+Peak relative power: 26.87 dB
+Mean relative power: 13.48 dB
+Estimated noise floor: 8.67 dB
+Occupancy threshold: 14.67 dB
+Estimated occupancy: 47.29%
+
+Important note:
+Power values are relative dB values obtained from SDR IQ samples. They are not calibrated dBm values because no external RF calibration was used.
