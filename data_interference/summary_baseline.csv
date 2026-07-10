@@ -1,0 +1,2 @@
+n_pings,n_lost,loss_pct,rtt_mean_ms,rtt_median_ms,rtt_max_ms,rtt_min_ms,jitter_ms
+150,0,0.0,9.24,10.0,20.0,1.0,3.3380233672040105
