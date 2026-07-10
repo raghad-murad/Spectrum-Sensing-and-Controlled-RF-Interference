@@ -167,8 +167,8 @@ def plot_and_save(
         3. Occupancy Threshold
         4. Detected occupied regions
     """
-    os.makedirs(config.FIGURES_DIR, exist_ok=True)
-    os.makedirs(config.DATA_DIR, exist_ok=True)
+    os.makedirs(config.SENSING_FIGURES_DIR, exist_ok=True)
+    os.makedirs(config.SENSING_DATA_DIR, exist_ok=True)
 
     plt.figure(figsize=(12, 6))
 
@@ -218,11 +218,11 @@ def plot_and_save(
     plt.legend(loc="upper right", fontsize=8)
     plt.tight_layout()
 
-    fig_path = os.path.join(config.FIGURES_DIR, f"scan_{label}.png")
+    fig_path = os.path.join(config.SENSING_FIGURES_DIR, f"scan_{label}.png")
     plt.savefig(fig_path, dpi=150)
     print(f"\nSaved plot -> {fig_path}")
 
-    psd_csv = os.path.join(config.DATA_DIR, f"scan_{label}.csv")
+    psd_csv = os.path.join(config.SENSING_DATA_DIR, f"scan_{label}.csv")
 
     with open(psd_csv, "w", newline="") as fp:
         writer = csv.writer(fp)
@@ -233,7 +233,7 @@ def plot_and_save(
 
     print(f"Saved PSD -> {psd_csv}")
 
-    channels_csv = os.path.join(config.DATA_DIR, f"channels_{label}.csv")
+    channels_csv = os.path.join(config.SENSING_DATA_DIR, f"channels_{label}.csv")
 
     with open(channels_csv, "w", newline="") as fp:
         fields = [

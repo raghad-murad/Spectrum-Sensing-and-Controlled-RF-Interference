@@ -47,5 +47,13 @@ BANDS = {
     },
 }
 
-DATA_DIR = "data"
-FIGURES_DIR = "figures_sensing"
+# ---------------------------------------------------------------------------
+# Separate output paths per component
+# ---------------------------------------------------------------------------
+# Component 1 (spectrum sensing) saves here:
+SENSING_DATA_DIR = "data_sensing"
+SENSING_FIGURES_DIR = "figures_sensing"
+
+# Component 2 (interference) saves here:
+INTERFERENCE_DATA_DIR = "data_interference"
+INTERFERENCE_FIGURES_DIR = "figures_interference"

@@ -166,16 +166,16 @@ def run_waterfall(
 
     plt.tight_layout()
 
-    os.makedirs(config.FIGURES_DIR, exist_ok=True)
-    os.makedirs(config.DATA_DIR, exist_ok=True)
+    os.makedirs(config.SENSING_FIGURES_DIR, exist_ok=True)
+    os.makedirs(config.SENSING_DATA_DIR, exist_ok=True)
 
     fig_path = os.path.join(
-        config.FIGURES_DIR,
+        config.SENSING_FIGURES_DIR,
         f"waterfall_{int(freq / 1e6)}MHz.png",
     )
 
     data_path = os.path.join(
-        config.DATA_DIR,
+        config.SENSING_DATA_DIR,
         f"waterfall_{int(freq / 1e6)}MHz.npy",
     )
 
